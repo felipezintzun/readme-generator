@@ -62,7 +62,6 @@ inquirer.prompt([
 ## description:${description}
 
 ### table of contents
-* [installation](#installation)
 * [license](#license)
 * [GitHub](#GitHub)
 * [email](email)
@@ -74,6 +73,8 @@ inquirer.prompt([
 ${installation}
 #### license:${license}
 ![GitHub license](https://img.shields.io/badge/license-${license}-blue.svg)
+#### GitHub Profile
+[GitHub](https://github.com/${GitHub})
 `
 console.log(readMeContent)
 fs.writeFileSync("README.md", readMeContent, (error)=>{
