@@ -10,7 +10,7 @@ inquirer.prompt([
 
     {
         type:"input",
-        name:"description",
+        name:"Description",
         message:"enter project description",
     },
 
@@ -57,11 +57,17 @@ inquirer.prompt([
         message:"select license type",
     },
 
+    {
+        type:"input",
+        name:"questions",
+        message:"ask questions",
+    },
+
     
-]).then(function({Title, description, GitHub, email, usage, installation, tests, contributors, license}){
+]).then(function({Title, Description, GitHub, email, usage, installation, tests, contributors, license, questions}){
     var readMeContent = `
-# title:${title}
-## description:${description}
+# Title:${Title}
+## Description:${Description}
 
 ### table of contents
 
@@ -72,6 +78,7 @@ inquirer.prompt([
 * [tests](#tests)
 * [contributors](#contributors)
 * [license](#license)
+* [questions](#Questions)
 
 #### GitHub Profile
 [GitHub](https://github.com/${GitHub})
@@ -94,6 +101,9 @@ ${contributors}
 #### License:
 ${license}
 ![GitHub license](https://img.shields.io/badge/license-${license}-blue.svg)
+
+#### Questions:
+${questions}
 
 `
 console.log(readMeContent)
