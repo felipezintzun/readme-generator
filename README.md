@@ -1,6 +1,6 @@
 
-# Title:test
-## description:test
+# Title:ReadMe Generator
+## Description:This project will generate a professional ReadMe.
 
 ### table of contents
 
@@ -14,27 +14,27 @@
 * [questions](#Questions)
 
 #### GitHub Profile
-[GitHub](https://github.com/felipeizijn)
+[GitHub](https://github.com/felipezintzun)
 
 #### Email:
-aemda@mdmdal
+felipezintzun@gmail.com
 
 #### Usage:
-test
+Professional/Education
 
 #### Installation:
-123
+1,2,3
 
 #### Tests:
-youturbe
+Watch this video
 
 #### Contributors:
-sangeetha
+Sangeetha
 
 #### License:
 MIT
 ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
 
 #### Questions:
-i have this question
+What challenges did you run in to?
 

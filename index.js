@@ -78,7 +78,7 @@ inquirer.prompt([
 * [tests](#tests)
 * [contributors](#contributors)
 * [license](#license)
-* [questions](#Questions)
+* [questions](#questions)
 
 #### GitHub Profile
 [GitHub](https://github.com/${GitHub})
