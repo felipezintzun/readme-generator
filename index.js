@@ -4,7 +4,7 @@ const fs = require("fs")
 inquirer.prompt([
     {
         type:"input",
-        name:"title",
+        name:"Title",
         message:"enter project title",
     },
 
@@ -58,7 +58,7 @@ inquirer.prompt([
     },
 
     
-]).then(function({title, description, GitHub, email, usage, installation, tests, contributors, license}){
+]).then(function({Title, description, GitHub, email, usage, installation, tests, contributors, license}){
     var readMeContent = `
 # title:${title}
 ## description:${description}
