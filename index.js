@@ -15,13 +15,6 @@ inquirer.prompt([
     },
 
     {
-        type:"list",
-        choices:["MIT", "ISC", "APACHE 2.0", "GPL", "NONE"],
-        name:"license",
-        message:"select license type",
-    },
-
-    {
         type:"input",
         name:"GitHub",
         message:"enter GitHub name",
@@ -41,44 +34,71 @@ inquirer.prompt([
 
     {
         type:"input",
-        name:"contributors",
-        message:"enter contributors",
-    },
-
-    {
-        type:"input",
         name:"installation",
         message:"enter steps required to install project",
     },
-
+    
     {
         type:"input",
         name:"tests",
         message:"provide examples of how to run application",
     },
-]).then(function({title, description, license, GitHub, email, usage, contributors, installation, tests}){
+
+    {
+        type:"input",
+        name:"contributors",
+        message:"enter contributors",
+    },
+
+    {
+        type:"list",
+        choices:["MIT", "ISC", "APACHE 2.0", "GPL", "NONE"],
+        name:"license",
+        message:"select license type",
+    },
+
+    
+]).then(function({title, description, GitHub, email, usage, installation, tests, contributors, license}){
     var readMeContent = `
 # title:${title}
 ## description:${description}
 
 ### table of contents
-* [license](#license)
+
 * [GitHub](#GitHub)
 * [email](email)
 * [usage](#usage)
-* [contributors](#contributors)
 * [installation](#installation)
 * [tests](#tests)
-#### installation
-${installation}
-#### license:${license}
-![GitHub license](https://img.shields.io/badge/license-${license}-blue.svg)
+* [contributors](#contributors)
+* [license](#license)
+
 #### GitHub Profile
 [GitHub](https://github.com/${GitHub})
+
+#### Email:
+${email}
+
+#### Usage:
+${usage}
+
+#### Installation:
+${installation}
+
+#### Tests:
+${tests}
+
+#### Contributors:
+${contributors}
+
+#### License:
+${license}
+![GitHub license](https://img.shields.io/badge/license-${license}-blue.svg)
+
 `
 console.log(readMeContent)
 fs.writeFileSync("README.md", readMeContent, (error)=>{
     if (error) throw error
 })
 console.log("readme-generator")
-})
+});
