@@ -72,7 +72,7 @@ inquirer.prompt([
 ### table of contents
 
 * [GitHub](#GitHub)
-* [email](email)
+* [email](#email)
 * [usage](#usage)
 * [installation](#installation)
 * [tests](#tests)

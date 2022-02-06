@@ -1,17 +1,17 @@
 
 # Title:ReadMe Generator
-## Description:This project will generate a professional ReadMe.
+## Description:This will generate a professional readme
 
 ### table of contents
 
 * [GitHub](#GitHub)
-* [email](email)
+* [email](#email)
 * [usage](#usage)
 * [installation](#installation)
 * [tests](#tests)
 * [contributors](#contributors)
 * [license](#license)
-* [questions](#Questions)
+* [questions](#questions)
 
 #### GitHub Profile
 [GitHub](https://github.com/felipezintzun)
@@ -20,21 +20,21 @@
 felipezintzun@gmail.com
 
 #### Usage:
-Professional/Education
+professional/educational
 
 #### Installation:
 1,2,3
 
 #### Tests:
-Watch this video
+watch this video
 
 #### Contributors:
-Sangeetha
+Sangeetha, my tutor
 
 #### License:
 MIT
 ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
 
 #### Questions:
-What challenges did you run in to?
+N/A
 
